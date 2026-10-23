@@ -1,11 +1,11 @@
 package com.x7.dara.repository.local
 
 import com.x7.dara.dao.MarketCacheDao
-import com.x7.dara.model.brs.BrsAsset
-import com.x7.dara.model.brs.BrsCrypto
-import com.x7.dara.model.brs.BrsResponse
+import com.x7.dara.model.server.BrsAsset
+import com.x7.dara.model.server.BrsCrypto
+import com.x7.dara.model.server.BrsResponse
 import com.x7.dara.model.database.market.MarketCacheEntity
-import com.x7.dara.model.brs.mapper.MarketCategory
+import com.x7.dara.model.server.mapper.MarketCategory
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject

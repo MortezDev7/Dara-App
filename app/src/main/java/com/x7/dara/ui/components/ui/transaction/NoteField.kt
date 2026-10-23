@@ -23,10 +23,10 @@ import com.x7.dara.ui.theme.Typography
 @Composable
 fun NoteField(
     note: String,
+    emptyText : String = "توضیحات",
     onNoteChange: (String) -> Unit,
-    modifier: Modifier = Modifier
 ) {
-    Column(modifier = modifier.fillMaxWidth()) {
+    Column(modifier = Modifier.fillMaxWidth()) {
 
         BasicTextField(
             value = note,
@@ -38,7 +38,7 @@ fun NoteField(
                 Box {
                     if (note.isEmpty()) {
                         Text(
-                            text = "توضیحات",
+                            text = emptyText,
                             fontSize = 16.sp,
                             color = TextTertiary,
                             fontWeight = FontWeight.Bold

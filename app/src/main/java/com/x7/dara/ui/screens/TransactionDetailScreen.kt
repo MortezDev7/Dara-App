@@ -133,6 +133,21 @@ fun TransactionDetailScreen(
 
                 Spacer(Modifier.height(40.dp))
 
+                if (transaction?.description != null){
+                    Text(
+                        "توضیحات",
+                        style = Typography.titleMedium,
+                    )
+                    Spacer(Modifier.height(15.dp))
+
+                    Text(
+                        text = transaction.description,
+                        style = Typography.titleMedium,
+                        fontWeight = FontWeight.Bold
+                    )
+                    Spacer(Modifier.height(40.dp))
+                }
+
                 Text(
                     "دسته‌بندی",
                     style = Typography.titleMedium,

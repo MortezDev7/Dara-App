@@ -1,8 +1,8 @@
-package com.x7.dara.model.brs.mapper
+package com.x7.dara.model.server.mapper
 
-import com.x7.dara.model.brs.BrsAsset
-import com.x7.dara.model.brs.BrsCrypto
-import com.x7.dara.model.brs.BrsResponse
+import com.x7.dara.model.server.BrsAsset
+import com.x7.dara.model.server.BrsCrypto
+import com.x7.dara.model.server.BrsResponse
 
 
 object MarketMapper {

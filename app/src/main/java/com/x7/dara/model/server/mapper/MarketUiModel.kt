@@ -1,6 +1,4 @@
-package com.x7.dara.model.brs.mapper
-
-import com.x7.dara.model.brs.mapper.MarketItemUi
+package com.x7.dara.model.server.mapper
 
 
 data class MarketUiModel(

@@ -1,4 +1,4 @@
-package com.x7.dara.utils
+package com.x7.dara.ui.components.app
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.fadeIn
@@ -36,6 +36,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -62,7 +63,7 @@ data class AppMessageData(
 private data class MessageStyle(
     val background: Color,
     val foreground: Color,
-    val icon: androidx.compose.ui.graphics.vector.ImageVector,
+    val icon: ImageVector,
     val defaultTitle: String
 )
 

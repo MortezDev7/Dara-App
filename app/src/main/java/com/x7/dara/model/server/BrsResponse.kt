@@ -1,4 +1,4 @@
-package com.x7.dara.model.brs
+package com.x7.dara.model.server
 
 data class BrsResponse(
     val gold: List<BrsAsset>,

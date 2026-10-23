@@ -2,8 +2,8 @@ package com.x7.dara.viewmodel.remote
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.x7.dara.model.brs.mapper.MarketMapper
-import com.x7.dara.model.brs.mapper.MarketUiModel
+import com.x7.dara.model.server.mapper.MarketMapper
+import com.x7.dara.model.server.mapper.MarketUiModel
 import com.x7.dara.repository.remote.CurrencyRepository
 import com.x7.dara.ui.state.DataUiState
 import dagger.hilt.android.lifecycle.HiltViewModel

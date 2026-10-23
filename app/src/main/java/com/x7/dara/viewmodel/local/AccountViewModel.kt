@@ -29,17 +29,6 @@ class AccountViewModel @Inject constructor(
 
     init {
         observeAccounts()
-        createTestAccount()
-    }
-
-    fun createTestAccount() {
-        addAccount(
-            name = "حساب تست",
-            type = AccountType.BANK,
-            balance = 1_000_000L,
-            currency = "IRR",
-            icon = null
-        )
     }
 
     private fun observeAccounts() {
@@ -62,10 +51,9 @@ class AccountViewModel @Inject constructor(
 
     fun addAccount(
         name: String,
-        type: AccountType,
         balance: Long,
-        currency: String,
-        icon: String?
+        currency: String = "ریال",
+        icon: Int?
     ) {
         viewModelScope.launch {
 
@@ -77,7 +65,6 @@ class AccountViewModel @Inject constructor(
 
                 val account = AccountEntity(
                     name = name,
-                    accountType = type,
                     balance = balance,
                     currency = currency,
                     icon = icon,

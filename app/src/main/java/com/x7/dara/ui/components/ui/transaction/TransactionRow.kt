@@ -68,9 +68,7 @@ fun TransactionRow(
         Spacer(Modifier.width(12.dp))
 
         Text(
-            text = transaction.description
-                ?.takeIf { it.isNotBlank() }
-                ?: categoryName,
+            text = categoryName,
             fontSize = 16.sp,
             fontWeight = FontWeight.Bold,
             color = TextPrimary

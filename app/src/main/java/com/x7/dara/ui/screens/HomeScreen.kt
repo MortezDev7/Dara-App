@@ -4,10 +4,8 @@ import androidx.compose.animation.Crossfade
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -33,9 +31,9 @@ import com.x7.dara.ui.components.app.header.HeaderDropdownTitle
 import com.x7.dara.ui.components.app.header.HeaderScaffold
 import com.x7.dara.ui.components.ui.home.ExpenseContent
 import com.x7.dara.ui.components.ui.home.IncomeContent
-import com.x7.dara.ui.theme.SurfacePrimary
 import com.x7.dara.ui.theme.SurfaceSecondary
 import com.x7.dara.viewmodel.local.AccountViewModel
+
 
 @Composable
 fun HomeScreen(
@@ -119,15 +117,15 @@ fun HomeScreen(
 
     Column(
         modifier = Modifier
-            .fillMaxSize()
             .background(SurfaceSecondary)
+            .fillMaxSize()
     ) {
 
         HeaderScaffold(
             modifier = Modifier
                 .weight(1f)
                 .fillMaxWidth(),
-            overlap = 40.dp,
+            overlap = 38.dp,
             header = { overlap ->
 
                 AppHeader(
@@ -191,7 +189,8 @@ fun HomeScreen(
                 },
                 onDismiss = {
                     showAccountDialog = false
-                }
+                },
+                onAddAccount = { navController.navigate("addAccountScreen") }
             )
         }
     }

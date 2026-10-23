@@ -127,6 +127,7 @@ fun DaraApp() {
                             navController = navController
                         )
                     }
+                    composable("addAccountScreen") { AddAccountScreen(navController) }
                 }
             }
         }

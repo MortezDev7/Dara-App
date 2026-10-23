@@ -1,4 +1,4 @@
-package com.x7.dara.model.brs.mapper
+package com.x7.dara.model.server.mapper
 
 data class MarketItemUi(
     var symbol: String,

@@ -32,7 +32,7 @@ import com.x7.dara.model.database.user.BudgetEntity
         BudgetEntity::class,
         MarketCacheEntity::class
     ],
-    version = 2,
+    version = 1,
     exportSchema = true
 )
 @TypeConverters(Converters::class)

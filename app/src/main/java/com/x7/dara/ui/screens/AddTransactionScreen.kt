@@ -31,11 +31,10 @@ import com.x7.dara.ui.components.app.header.HeaderTitle
 import com.x7.dara.ui.components.ui.transaction.ExpenseForm
 import com.x7.dara.ui.components.ui.transaction.IncomeForm
 import com.x7.dara.ui.state.UiEvent
-import com.x7.dara.ui.theme.SurfacePrimary
 import com.x7.dara.ui.theme.SurfaceSecondary
-import com.x7.dara.utils.AppMessage
-import com.x7.dara.utils.AppMessageData
-import com.x7.dara.utils.AppMessageType
+import com.x7.dara.ui.components.app.AppMessage
+import com.x7.dara.ui.components.app.AppMessageData
+import com.x7.dara.ui.components.app.AppMessageType
 import com.x7.dara.utils.money.MoneyUtils
 import com.x7.dara.viewmodel.local.AccountViewModel
 import com.x7.dara.viewmodel.local.TransactionViewModel
@@ -295,7 +294,8 @@ fun AddTransactionScreen(
 
                 onDismiss = {
                     showAccountDialog = false
-                }
+                },
+                onAddAccount = { navController.navigate("addAccountScreen") }
             )
         }
     }
